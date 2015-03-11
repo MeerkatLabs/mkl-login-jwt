@@ -1,5 +1,5 @@
 {
-  "name": "mkl.login.jwt",
+  "name": "mkl-login-jwt",
   "version": "0.0.1",
   "description": "Angular module that will handle the common code for requesting JWT for authentication.",
   "license": "MIT",

@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         jasmine: {
             concated: {
                 src: [
-                    'dist/mkl.login.jwt.js'
+                    'dist/<%= pkg.name %>.js'
                 ],
                 options: {
                     vendor: [
@@ -76,7 +76,7 @@ module.exports = function(grunt) {
                 }
             },
             minimized: {
-                src: 'dist/mkl.login.jwt.min.js',
+                src: 'dist/<%= pkg.name %>.min.js',
                 options: {
                     vendor: [
                         'bower/angular/angular.min.js',
