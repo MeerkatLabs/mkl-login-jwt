@@ -10,7 +10,7 @@
  * to the httpProvider service.
  */
 
-angular.module('mkl.login.jwt', ['angular-jwt'])
+angular.module('mkl-login-jwt', ['angular-jwt'])
     .config(['$httpProvider', 'jwtInterceptorProvider', function($httpProvider, jwtInterceptorProvider) {
 
     jwtInterceptorProvider.tokenGetter = ['LoginService', 'config', function(LoginService, config) {
@@ -21,9 +21,6 @@ angular.module('mkl.login.jwt', ['angular-jwt'])
 
     $httpProvider.interceptors.push('jwtInterceptor');
 }]);
-/**
- * Created by rerobins on 2/19/15.
- */
 /**
  * Login service that is responsible for retrieving and maintaining the JWT token.
  *
@@ -252,7 +249,7 @@ var LoginServiceProvider = function() {
 
 };
 
-angular.module('mkl.login.jwt')
+angular.module('mkl-login-jwt')
     .provider('JWTLoginService', LoginServiceProvider)
     .constant('LOGIN_EVENTS', {
         USER_LOGGED_IN: 'login::userLoggedIn',

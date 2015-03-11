@@ -30,7 +30,7 @@ describe('tests', function() {
         });
     };
 
-    beforeEach(module('mkl.login.jwt'));
+    beforeEach(module('mkl-login-jwt'));
 
     beforeEach(function() {
         loginDisplayed = false;
@@ -39,7 +39,7 @@ describe('tests', function() {
         var displayLoginConfig = ['$q', displayLogin];
         var hideLoginConfig = ['$q', hideLogin];
 
-        angular.module('mkl.login.jwt')
+        angular.module('mkl-login-jwt')
             .config(function(JWTLoginServiceProvider) {
                 JWTLoginServiceProvider.displayLogin = displayLoginConfig;
                 JWTLoginServiceProvider.hideLogin = hideLoginConfig;
