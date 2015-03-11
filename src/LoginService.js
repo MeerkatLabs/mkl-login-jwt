@@ -1,7 +1,4 @@
 /**
- * Created by rerobins on 2/19/15.
- */
-/**
  * Login service that is responsible for retrieving and maintaining the JWT token.
  *
  * The work flow of dealing with the service is:
