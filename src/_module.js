@@ -5,7 +5,7 @@
  * to the httpProvider service.
  */
 
-angular.module('mkl.login.jwt', ['angular-jwt'])
+angular.module('mkl-login-jwt', ['angular-jwt'])
     .config(['$httpProvider', 'jwtInterceptorProvider', function($httpProvider, jwtInterceptorProvider) {
 
     jwtInterceptorProvider.tokenGetter = ['LoginService', 'config', function(LoginService, config) {

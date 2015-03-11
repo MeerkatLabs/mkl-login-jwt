@@ -226,7 +226,7 @@ var LoginServiceProvider = function() {
 
 };
 
-angular.module('mkl.login.jwt')
+angular.module('mkl-login-jwt')
     .provider('JWTLoginService', LoginServiceProvider)
     .constant('LOGIN_EVENTS', {
         USER_LOGGED_IN: 'login::userLoggedIn',
