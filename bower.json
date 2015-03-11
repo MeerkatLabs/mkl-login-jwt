@@ -1,0 +1,24 @@
+{
+  "name": "mkl.login.jwt",
+  "version": "0.0.1",
+  "authors": [
+    "Robert Robinson <rerobins@meerkatlabs.org>"
+  ],
+  "description": "AngularAngular module that will handle the common code for requesting JWT for authentication.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13",
+    "angular-jwt": "~0.0.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.14"
+  }
+}
