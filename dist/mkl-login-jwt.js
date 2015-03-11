@@ -13,9 +13,9 @@
 angular.module('mkl-login-jwt', ['angular-jwt'])
     .config(['$httpProvider', 'jwtInterceptorProvider', function($httpProvider, jwtInterceptorProvider) {
 
-    jwtInterceptorProvider.tokenGetter = ['LoginService', 'config', function(LoginService, config) {
+    jwtInterceptorProvider.tokenGetter = ['JWTLoginService', 'config', function(JWTLoginService, config) {
 
-        return LoginService.getJWT(config);
+        return JWTLoginService.getJWT(config);
 
     }];
 
