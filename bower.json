@@ -4,9 +4,9 @@
   "authors": [
     "Robert Robinson <rerobins@meerkatlabs.org>"
   ],
-  "description": "AngularAngular module that will handle the common code for requesting JWT for authentication.",
+  "description": "Angular module that will handle the common code for requesting JWT for authentication.",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
